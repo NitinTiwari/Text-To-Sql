@@ -34,3 +34,6 @@ OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
 
 # Default model for Text-to-SQL
 TEXT_TO_SQL_MODEL = os.getenv("TEXT_TO_SQL_MODEL", "llama3.1:latest")
+
+# FastAPI backend URL
+API_BASE_URL = os.getenv("API_BASE_URL", "http://localhost:8000")

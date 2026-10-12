@@ -41,12 +41,6 @@ def clean_sql_query(raw_response: str) -> str:
 
 
 def get_ollama_base_url() -> str:
-    try:
-        import streamlit as st
-        if "OLLAMA_BASE_URL" in st.secrets:
-            return str(st.secrets["OLLAMA_BASE_URL"])
-    except Exception:
-        pass
     return os.getenv("OLLAMA_BASE_URL", OLLAMA_BASE_URL)
 
 

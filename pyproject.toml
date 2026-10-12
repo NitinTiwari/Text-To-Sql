@@ -1,7 +1,7 @@
 [project]
 name = "AI-Data-Analyst"
 version = "0.1.0"
-description = "Natural-language SQL generator for SQLite databases using Ollama and Streamlit"
+description = "Natural-language SQL generator for SQLite databases using Ollama and Gradio"
 readme = "README.md"
 authors = [
     { name = "nitin.iats@gmail.com", email = "nitin.iats@gmail.com" }
@@ -12,7 +12,11 @@ dependencies = [
     "langchain-ollama>=1.1.0",
     "pandas>=2.2.0",
     "sqlalchemy>=2.1.0",
-    "streamlit>=1.64.0",
+    "gradio>=5.0.0",
+    "python-dotenv>=1.0.0",
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "requests>=2.31.0",
 ]
 
 [tool.uv]
